@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nacionalidade</title>
+    
+</head>
+<body>
+        <h1> Identificar Nacionalidade </h1>
+    Informe onde nasceu: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" id="verificar" onclick="verificarpais()">
+    <div id = "res"></div>
+
+
+        <script>
+
+        function verificarpais (){
+        var txtpais = document.querySelector('input#txtpais')
+        var resultado = document.querySelector('div#res')
+        var nomepais = String(txtpais.value).toUpperCase() // para validar maisculas e minusculas
+        resultado.innerHTML = `Você nasceu no pais: <strong>${nomepais}</strong></br>`
+        if (nomepais == 'BRASIL'){
+            resultado.innerHTML += 'Então você é Brasileiro!</br>'
+        }else{
+            resultado.innerHTML += 'Então você é Estrangeiro!'
+        }
+        }
+                
+        </script>
+
+</body>
+</html>
