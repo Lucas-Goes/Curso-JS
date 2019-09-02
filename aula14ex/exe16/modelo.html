@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vamos Contar</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>Vamos Contar</h1> 
+    </header>   
+
+    <section>
+        <div>
+            Início:
+            <input type="number" id="txtinicio">
+        </div>
+        <div>
+            Fim:
+            <input type="number" id="txtfim">
+        </div>    
+        <div>
+            Incremento: 
+            <input type="number" id="txtincremento" min="0">
+        </div>
+        <div>
+            <input type="button" value="Calcular" onclick="calcular()">
+        </div>
+        <div id="res"></div>
+    </section>
+
+    <footer>
+        <p>&copy;CursoemVideo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
